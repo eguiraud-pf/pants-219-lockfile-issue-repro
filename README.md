@@ -24,3 +24,4 @@ Expected matching RIGHT_PARENTHESIS for LEFT_PARENTHESIS, after version specifie
 ```
 
 When using 2.18 instead of 2.19 in `pants.toml`, the command runs correctly.
+2.20 also seems to suffer from the same regression.
