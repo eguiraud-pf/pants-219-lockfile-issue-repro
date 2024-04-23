@@ -1,0 +1,1 @@
+jupyter-cadquery==3.5.2

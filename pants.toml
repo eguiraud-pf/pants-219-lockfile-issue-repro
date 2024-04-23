@@ -1,0 +1,27 @@
+[GLOBAL]
+pants_version = "2.19.0"
+backend_packages = [
+  "pants.backend.python",
+]
+build_patterns = ["BUILD.pants"]
+
+[tailor]
+build_file_name = "BUILD.pants"
+
+[source]
+# The Python source root is the repo root.
+root_patterns = ["/"]
+
+[python]
+# The default interpreter constraints for code in this repo.
+interpreter_constraints = ["==3.10.*"]
+
+enable_resolves = true
+resolves = { python-default = "requirements.lock" }
+
+[repl]
+shell = "ipython"
+
+[anonymous-telemetry]
+enabled = false
+
